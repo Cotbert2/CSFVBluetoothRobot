@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Carrito Soccer</string>
+    <string name="titleconfi">Configuración:</string>
+    <string name="Up">Arriba⏫ :</string>
+    <string name="Down">Abajo⏬ :</string>
+    <string name="Rigth">Derecha⏩ :</string>
+    <string name="Left">Izquierda⏪:</string>
+    <string name="Stop">Detener🛑 :</string>
+    <string name="V">Vibrar📳:</string>
+    <string name="UE">UNIDAD EDUCATIVA SALESIANA ¨DON BOSCO¨</string>
+</resources>
