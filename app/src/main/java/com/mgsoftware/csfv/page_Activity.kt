@@ -10,7 +10,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 
 class page_Activity : AppCompatActivity() {
-    val URL = "https://donboscolatola.edu.ec/"
+    val URL = "https://miespe.espe.edu.ec"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
