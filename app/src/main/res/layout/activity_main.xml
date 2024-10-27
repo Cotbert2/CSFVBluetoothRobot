@@ -9,12 +9,13 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/imageView"
+        android:id="@+id/forward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_su23"
+        android:contentDescription="@string/Up"
         app:backgroundTint="#B12929"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintBottom_toTopOf="@+id/mainlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,49 +23,53 @@
         tools:ignore="VectorDrawableCompat" />
 
     <ImageButton
-        android:id="@+id/imageView2"
+        android:id="@+id/backward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:background="@drawable/ic_su2"
+        android:contentDescription="@string/Down"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/mainlogo"
         app:srcCompat="@drawable/ic_su2"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageButton
-        android:id="@+id/imageView3"
+        android:id="@+id/right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_der"
+        android:contentDescription="@string/Rigth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/mainlogo"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_der"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageButton
-        android:id="@+id/imageView4"
+        android:id="@+id/left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_arri"
+        android:contentDescription="@string/Left"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/mainlogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_arri"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/btLogo"
         android:layout_width="54dp"
         android:layout_height="78dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:contentDescription="@string/bluetooth"
         android:onClick="bluetoothconfi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -72,9 +77,10 @@
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/mainlogo"
         android:layout_width="125dp"
         android:layout_height="125dp"
+        android:contentDescription="@string/Stop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,26 +89,28 @@
         tools:ignore="VectorDrawableCompat" />
 
     <ImageButton
-        android:id="@+id/button"
+        android:id="@+id/entityLogo"
         android:layout_width="50dp"
         android:layout_height="70dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/ad"
+        android:contentDescription="@string/entity"
         android:onClick="pagewiew"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/button3"
+        android:id="@+id/configButton"
         android:layout_width="54dp"
         android:layout_height="54dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/ic_trcs"
+        android:contentDescription="@string/settings"
         android:onClick="confi"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -7,7 +7,6 @@ import android.graphics.Color
 import android.os.*
 import androidx.appcompat.app.AppCompatActivity
 import android.preference.PreferenceManager
-import android.text.BoringLayout
 import android.view.MotionEvent
 import android.view.View
 import android.view.Window
@@ -19,7 +18,6 @@ import java.io.OutputStream
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
-
 
     val name_key_up = "up"
     val name_key_down = "down"
@@ -35,22 +33,15 @@ class MainActivity : AppCompatActivity() {
     var Stop: String? = null
     var vi: Boolean? = null
 
-
     var statusimage: ImageView? = null
     var bueconf: Intent? = null
     var istouchingabutton = false
-    var send_data = false
-    var lists: ListView? = null
-    var macsAddress = mutableListOf<String>()
-    var devicess = mutableListOf<String>()
-    var arrayAdapter: ArrayAdapter<String>? = null
-    var sw1: Switch? = null
     var bluetoothAdapter: BluetoothAdapter = BluetoothAdapter.getDefaultAdapter()
     var onclicbutton = false
     var ConectionBluetooth: Conection? = null
     var blockconection = false
-    var dat = "U"
-    var activityenabled = false
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -72,11 +63,11 @@ class MainActivity : AppCompatActivity() {
         Stop=prefers.getString(name_key_stop, "o")
         vi= prefers.getBoolean(name_key_vi, false)
 
-        statusimage = findViewById(R.id.imageView6)
-        val btnadelante = findViewById<View>(R.id.imageView)
-        val btnatras = findViewById<View>(R.id.imageView2)
-        val btnderecha = findViewById<View>(R.id.imageView3)
-        val btnizquierda = findViewById<View>(R.id.imageView4)
+        statusimage = findViewById(R.id.mainlogo)
+        val btnadelante = findViewById<View>(R.id.forward)
+        val btnatras = findViewById<View>(R.id.backward)
+        val btnderecha = findViewById<View>(R.id.right)
+        val btnizquierda = findViewById<View>(R.id.left)
         btnadelante.setOnTouchListener(object:View.OnTouchListener{
             @RequiresApi(Build.VERSION_CODES.O)
             override fun onTouch(v: View?, event: MotionEvent?): Boolean {
